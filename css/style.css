@@ -2,5 +2,49 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #ccc;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #CAF0C6;
+}
+
+
+div.container{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 500px;
+	height: 300px;
+	transform: translate(-50% , -50%);
+	background-color: #eee;
+	text-align: center;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+h1{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	background-color:  #eee;
+
+}
+
+ul{
+	display: inline-block;
+	background-color:  #eee;
+
+}
+
+li{
+	border: 2px solid #ccc;
+
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: left;
+	list-style-type: none;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	
 }
