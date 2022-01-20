@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Gerenciamento de Pessoas</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo INCLUDE_PATH?>/css/style.css">
 </head>
 <body>
 	<h1>Gerenciamento de Pessoas</h1>
