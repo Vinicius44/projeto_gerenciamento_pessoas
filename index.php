@@ -32,6 +32,22 @@
 	</ul>
 	</div><!--container-->
 
+	<?php
+
+		if($url == "Cadastrar_Pessoas")
+
+		switch ($url) {
+			case 'Cadastrar_Pessoas':
+				include("pages/Cadastrar_Pessoas.php");
+				break;
+			
+			default:
+				# code...
+				break;
+		}
+
+	?>
+
 
 
 
