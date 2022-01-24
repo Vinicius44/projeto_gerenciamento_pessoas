@@ -20,13 +20,13 @@ div.container{
 	border-radius: 10px;
 }
 
-h1{
+/*h1{
 	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 30px;
 	background-color:  #eee;
 
-}
+}*/
 
 ul{
 	display: inline-block;
@@ -47,4 +47,21 @@ a{
 	color: black;
 	text-decoration: none;
 	
+}
+
+div.containere{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 80px;
+	height: 70px;
+	transform: translate(-50% , -50%);
+	background-color: #eee;
+	text-align: center;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+h1.entrar{
+	color: white;
 }

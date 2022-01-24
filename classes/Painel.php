@@ -9,12 +9,17 @@
 	{
 		
 
-
-		public static function entrarMenu($entrada){
-				if($entrada == "menu"){
-					include("../pages/Menu.php");
-				}
+		public static function entrarMenu(){
+				return true;
+				
 		}
+
+
+		public static function entrarCadastrarPessoas(){
+				include("pages/Cadastrar_Pessoas.php");
+				
+		}
+				
 		
 
 

@@ -1,8 +1,9 @@
 <?php
 
-	
+	session_start();
 
-	$auloload = function($class){
+
+	$autoload = function($class){
 		include("classes/".$class.".php");
 	};
 

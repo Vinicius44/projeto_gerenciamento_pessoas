@@ -1,1 +1,3 @@
-<h2>Olá</h2>
+<div class="containere">
+	<h1 class="entrar">Cadastrar Pessoas</h1>
+</div>
