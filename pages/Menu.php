@@ -1,5 +1,5 @@
 <div class="container">
-	<h1>Gerenciamento de Pessoas</h1>
+	<h1 class="titulo">Gerenciamento de Pessoas</h1>
 	<ul>
 		<li><a href="Cadastrar_Pessoas">Cadastrar Pessoas</a></li>
 		<li><a href="Modificar_Pessoas">Modificar Pessoas</a></li>

@@ -3,8 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
+	
+}
+
+body{
 	background-color: #CAF0C6;
 }
+
 
 
 div.container{
@@ -20,13 +25,13 @@ div.container{
 	border-radius: 10px;
 }
 
-/*h1{
+h1.titulo{
 	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 30px;
 	background-color:  #eee;
 
-}*/
+}
 
 ul{
 	display: inline-block;
@@ -49,19 +54,34 @@ a{
 	
 }
 
-div.containere{
+div.containerEntrar{
+	
 	position: absolute;
-	top: 40%;
+	margin-top: 20px;
 	left: 50%;
-	width: 80px;
-	height: 70px;
-	transform: translate(-50% , -50%);
+	transform: translateX(-50%);
+	width: 1000px;
+	height: 500px;
+	
 	background-color: #eee;
-	text-align: center;
+	
 	border: 2px solid #ccc;
 	border-radius: 10px;
 }
 
-h1.entrar{
-	color: white;
+h2.entrar{
+
+	color: black;
+	margin: 20px;
 }
+
+label,input{
+	text-align: left;
+	margin: 5px 5px 5px 30px;
+	
+}
+
+/*input{
+	margin-top: 10px;
+}
+*/
