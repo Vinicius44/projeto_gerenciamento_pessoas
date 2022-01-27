@@ -34,7 +34,7 @@
 				$cpf = $_POST["cpf"];
 				$foto = "vinicius.png";
 
-				$sql = Mysql::conectar()->prepare("INSERT INTO cadastrar (id, nome,rg, cpf,foto) VALUES (null, ?, ?, ?, ?) ");
+				$sql = Mysql::conectar()->prepare("INSERT INTO cadastrar(id, nome,rg, cpf,foto) VALUES (null, ?, ?, ?, ?) ");
 
 				$sql->execute(array($nome,$rg,$cpf,$foto));
 
