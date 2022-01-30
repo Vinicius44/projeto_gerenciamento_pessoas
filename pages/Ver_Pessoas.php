@@ -9,18 +9,32 @@
 		</div><!--w100-->
 
 
-		<input type="submit" name="acao" value="Cadastrar">
+		<input type="submit" name="acao" value="Olhar">
 	</form>
 
-		<table>
-		<td>
-			<tr class="tabela">ID</tr>
-			<tr>NOME</tr>
-			<tr>RG</tr>
-			<tr>CPF</tr>
-			<tr>FOTO</tr>
-		</td>
-		</table>
+		<div class="flex-tabela">
+			<div><h5>ID</h5></div>
+			<div><h5>NOME</h5></div>
+			<div><h5>RG</h5></div>
+			<div><h5>CPF</h5></div>
+			<div><h5>FOTO</h5></div>
+		</div>
+
+		<div class="tabela-var">
+			<div><h5>1</h5></div>
+			<div><h5>Vinicius</h5></div>
+			<div><h5>123</h5></div>
+			<div><h5>321</h5></div>
+			<div><h5>vinicius.jpg</h5></div>
+		</div>
+
+		<div class="tabela-var">
+			<div><h5>1</h5></div>
+			<div><h5>Vinicius</h5></div>
+			<div><h5>123</h5></div>
+			<div><h5>321</h5></div>
+			<div><h5>vinicius.jpg</h5></div>
+		</div>
 		
 
 

@@ -86,16 +86,36 @@ h5.textAlert{
 }
 
 
-.tabelaPessoas{
-	margin-top: 50px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+.flex-tabela{
+	margin: 30px;
+	margin-bottom: 10px;
+	display: flex;
 	width: 900px;
-	height: 50px;
-	
-	
+	border-bottom: 2px solid #ccc;
 }
-.tabela{
-	width: 700px;
+
+.flex-tabela div{
+	flex: 1;
+	border-right: 2px solid #ccc;
+	text-align: center;
 }
+
+.flex-tabela div:nth-last-child(1){
+	border-right: none;
+}
+
+.tabela-var{
+	margin-left: 30px;
+	
+	display: flex;
+	width: 900px;
+}
+
+.tabela-var div{
+	padding-left: 5px;
+	margin-bottom: 5px;
+	border-top: 0;
+	flex: 1;
+	text-align: left;
+}
+
