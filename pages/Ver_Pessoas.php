@@ -20,21 +20,9 @@
 			<div><h5>FOTO</h5></div>
 		</div>
 
-		<div class="tabela-var">
-			<div><h5>1</h5></div>
-			<div><h5>Vinicius</h5></div>
-			<div><h5>123</h5></div>
-			<div><h5>321</h5></div>
-			<div><h5>vinicius.jpg</h5></div>
-		</div>
+		
 
-		<div class="tabela-var">
-			<div><h5>1</h5></div>
-			<div><h5>Vinicius</h5></div>
-			<div><h5>123</h5></div>
-			<div><h5>321</h5></div>
-			<div><h5>vinicius.jpg</h5></div>
-		</div>
+		
 		
 
 
@@ -43,13 +31,21 @@
 		if(isset($_POST["acao"])){
 			$cpf = $_POST["cpf"];
 
-			$sql = Mysql::conectar()->prepare("SELECT FROM `cadastrar` WHERE `cpf` = ?");
+			$sql = Mysql::conectar()->prepare("SELECT * FROM `cadastrar` WHERE `cpf` = ?");
 			$sql->execute(array($cpf));
 
 			if($sql->rowCount() == 1){
 				$info = $sql->fetch();
 
-				echo "<h5 class='textoAlert'>A pessoa foi excluida com sucesso!</h5>";
+
+
+				echo "<div class='tabela-var'>
+						<div><h5>".$info["id"]."</h5></div>
+						<div><h5>".$info["nome"]."</h5></div>
+						<div><h5>".$info["rg"]."</h5></div>
+						<div><h5>".$info["cpf"]."</h5></div>
+						<div><h5>".$info["foto"]."</h5></div>
+					</div>";
 			}else{
 				echo "<h5 class='excluir'>A pessoa não foi encontrada, tente novamente.</h5>";
 			}
