@@ -63,6 +63,7 @@
 
 	?>
 
+	<script type="text/javascript" src="<?php echo INCLUDE_PATH?>js/script.js"></script>
 
 
 

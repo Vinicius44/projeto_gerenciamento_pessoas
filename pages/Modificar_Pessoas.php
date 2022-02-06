@@ -8,7 +8,7 @@
 	
 		<div class="w100">
 		<div><label>CPF da pessoa que quer atualizar: </label></div>
-		<div><input type="text" name="cpf"/></div>
+		<div><input class="verCpf" type="text" name="verCpf"/></div>
 		</div><!--w100-->
 
 
@@ -24,7 +24,7 @@
 		
 
 		if(isset($_POST["acao"])){
-			$cpf = $_POST["cpf"];
+			$cpf = $_POST["verCpf"];
 
 			$sql = Mysql::conectar()->prepare("SELECT * FROM `cadastrar` WHERE `cpf` = ?");
 			$sql->execute(array($cpf));
@@ -40,7 +40,10 @@
 
 
 				echo "
-					<div><h5 class='id' id='idPessoa' name='id'>".$id."</h5></div>
+					<div class='w100'>
+					<div><label>ID: </label></div>
+					<div><input type='text' name='id' required='' value='".$id."' readonly/></div>
+					</div><!--w100-->
 
 					<div class='w100'>
 					<div><label>Nome: </label></div>
@@ -58,7 +61,7 @@
 					</div><!--w100-->
 
 
-					<input type='submit' name='atualizar' value='Atualizar'/>
+					<input type='submit' class='atualizar' name='atualizar' value='Atualizar'/>
 
 
 					";
@@ -73,12 +76,12 @@
 
 
 		if(isset(($_POST["atualizar"]))){
-								
+								$id = $_POST["id"];
 								$nome = $_POST["nome"];
 								$rg = $_POST["rg"];
 								$cpf = $_POST["cpf"];
 								
-								echo $nome;
+							
 
 								$sql = Mysql::conectar()->prepare("UPDATE `cadastrar` SET nome = ?, rg = ?, cpf = ? WHERE id = ?");
 
@@ -86,12 +89,15 @@
 								$sql->execute(array($nome,$rg,$cpf,$id));
 
 
-								echo "<h5 class='excluir'>A pessoa foi cadastrada com sucesso!</h5>";
+								echo "<h5 class='excluir'>A pessoa foi atualizada com sucesso!</h5>";
 							}
 
 
 	?>
 	</form>
+
+
+	
 
 
 

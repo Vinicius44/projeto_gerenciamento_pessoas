@@ -1,15 +1,12 @@
 
+	
 
+	var inputTextCPF = document.getElementsByClassName("verCpf");
+	
+	desabilitarCPF();
 
+	function desabilitarCPF(){
+		document.getElementById("olharAtualizar").disabled = true;
+	}
 
-var btnOlhar = document.getElementById("olharAtualizar");
-
-
-
-btnOlhar.addEventListener("click" , function(){
-
-	console.log("Ola");
-	btnOlhar.disable = false;
-
-});
-
+		
