@@ -22,9 +22,9 @@
 			$sql->execute(array($cpf));
 
 			if($sql->rowCount() == 1){
-				echo "<h5 class='textoAlert'>A pessoa foi excluida com sucesso!</h5>";
+				echo "<h5 class='textAlert'>A pessoa foi excluida com sucesso!</h5>";
 			}else{
-				echo "<h5 class='textoAlert'>A pessoa não foi encontrada, tente novamente.</h5>";
+				echo "<h5 class='textAlert'>A pessoa não foi encontrada, tente novamente.</h5>";
 			}
 
 

@@ -17,7 +17,6 @@
 			<div><h5>NOME</h5></div>
 			<div><h5>RG</h5></div>
 			<div><h5>CPF</h5></div>
-			<div><h5>FOTO</h5></div>
 		</div>
 
 		
@@ -44,10 +43,9 @@
 						<div><h5>".$info["nome"]."</h5></div>
 						<div><h5>".$info["rg"]."</h5></div>
 						<div><h5>".$info["cpf"]."</h5></div>
-						<div><h5>".$info["foto"]."</h5></div>
 					</div>";
 			}else{
-				echo "<h5 class='excluir'>A pessoa não foi encontrada, tente novamente.</h5>";
+				echo "<h5 class='textAlert'>A pessoa não foi encontrada, tente novamente.</h5>";
 			}
 
 
