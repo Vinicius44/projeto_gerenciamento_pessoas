@@ -8,12 +8,12 @@
 	
 		<div class="w100">
 		<div><label>CPF da pessoa que quer atualizar: </label></div>
-		<div><input class="verCpf" type="text" name="verCpf"/></div>
+		<div><input id="inputTextVerCpf" type="text" name="verCpf"/></div>
 		</div><!--w100-->
 
 
 
-		<input id="olharAtualizar" type="submit" name="acao" value="Olhar" />
+		<input id="olharModificar" type="submit" name="acao" value="Olhar" />
 
 
 		
@@ -61,13 +61,13 @@
 					</div><!--w100-->
 
 
-					<input type='submit' class='atualizar' name='atualizar' value='Atualizar'/>
+					<input id='atualizarModificar' type='submit' class='atualizar' name='atualizar' value='Atualizar'/>
 
 
 					";
 
 			}else{
-				echo "<h5 class='excluir'>A pessoa não foi encontrada, tente novamente.</h5>";
+				echo "<h5 class='textAlert'>A pessoa não foi encontrada, tente novamente.</h5>";
 			}
 
 
@@ -89,7 +89,7 @@
 								$sql->execute(array($nome,$rg,$cpf,$id));
 
 
-								echo "<h5 class='excluir'>A pessoa foi atualizada com sucesso!</h5>";
+								echo "<h5 class='textAlert'>A pessoa foi atualizada com sucesso!</h5>";
 							}
 
 
